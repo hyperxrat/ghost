@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&family=Viga&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: #ffffff;
+    max-width: 120rem;
+    margin: auto;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ffffff;
+    height: 5rem;
+    max-width: 100rem;
+    /* border-bottom: 1px solid rgb(141, 141, 141); */
+}
+
+.logo{
+    /* color: #E50914; */
+    color: #000;
+    font-family: 'this cafe';
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0rem 1.875rem;
+}
+
+.rightnav{
+    margin-right: 1.875rem;
+}
+ul a{
+    display: inline;
+    padding: 1.25rem 0.938rem;
+    color: #252525;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.938rem;
+    gap: 0.625rem;
+    text-decoration: none;
+}
+ul a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1.875rem;
+    text-decoration-thickness: 0.125rem;
+}
+nav button{
+    padding: 0.938rem 1.25rem;
+    margin: 0px 0.313rem;
+    border-radius: 0.313rem;
+    font-size: 0.938rem;
+    font-family: 'gotham light';
+    font-weight: 900;
+    border: 1px solid #252525;
+    cursor: pointer;
+    box-shadow: 0.313rem 0.313rem #252525;
+}
+.signup{
+    box-shadow: 0.313rem 0.313rem #252525;
+}
+nav button:hover{
+    background-color: #252525;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: none;
+}
+.hidden_rightnav{
+    display: none;
+    margin-right: 1.875rem;
+}
+.hidden_rightnav img{
+    width: 55px;
+    border-radius: 50px;
+}
+
+/*  */
+.container{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#box1{
+    width: 16%;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 10px;
+}
+#box2{
+    width: 84%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+/* -----------------BOX 1--------------- */
+
+.moneybtn img{
+    width: 25px;
+    margin: 0px 10px;
+}
+.moneybtn{
+    width: 85%;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px auto;
+    font-family: 'poppins';
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: none;
+}
+
+.moneybtn:hover{
+    background-color: #dbdbdb;
+    /* box-shadow: 0px 1px 15px #151515; */
+}
+
+.boxbtn:hover{
+    background-color: #dbdbdb;
+}
+.moneygbtn{
+    color: #fff;
+    background-color: #151515;
+}

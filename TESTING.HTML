@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .signup-form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .signup-form h2 {
+            margin-bottom: 20px;
+        }
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <script>
+
+        
+function signUp() {
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (username === "" || email === "" || password === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    // Create a user object
+    const user = {
+        username: username,
+        email: email,
+        password: password
+    };
+
+    // Save the user object in local storage
+    localStorage.setItem('user', JSON.stringify(user));
+
+    // Notify the user
+    alert("Sign up successful!");
+
+    // Clear the form
+    document.getElementById('username').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
+
+    // Redirect to the home page
+    window.location.href = 'home.html'; // Replace 'home.html' with the actual home page URL
+}
+        
+
+    </script>
+</body>
+</html>
